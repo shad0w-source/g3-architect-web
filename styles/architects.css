@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles  */
+
+.display-flex {
+  display: flex;
+}
+
+.text-gray {
+  color: #424242;
+}
+
+.dark3 {
+  color: rgba(114, 114, 114, 1);
+}
+
+.btnprim {
+  background-color: rgba(255, 144, 14, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main>section {
+  margin-top: 130px;
+}
+
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+/* header styles */
+
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* navbar related styles */
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.nav-bar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgba(19, 19, 19, 1);
+}
+
+/* banner related */
+
+.bannerContent {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.bannerTitle {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.bannerImg {
+  width: 100%;
+}
+
+/* main style */
+
+.teams {
+  align-items: center;
+}
+
+.teamImgSec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.ourFeatures {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+
+
+.featureColor {
+  color: #FF900E;
+}
+
+#quickList {
+  font-weight: 500;
+}
+
+.featureDescription,
+.factDescription {
+  font-size: 1rem;
+}
+
+/* responsive  */
+@media screen and (max-width: 576px) {
+
+  .nav-bar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+
+  .teamImgSec {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .ourFeatures {
+    margin-left: 20px;
+  }
+
+}
+
+/* for minimum devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+
+  .ourFeatures {
+    margin: 50px auto;
+  }
+}
